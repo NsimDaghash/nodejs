@@ -35,7 +35,6 @@ const addNewUser =async (name,email)=>{
     }
 }
 
-
 const deleteUserById =async (id)=>{
     const file = await showAllUser()
     const user = file.users.filter(user => user.id !== id);
